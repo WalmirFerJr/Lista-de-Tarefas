@@ -1,0 +1,5 @@
+// Procurar por moludos na pasta do projeto, para evitar falsos erros
+
+{
+    "python.analysis.extraPaths": ["${workspaceFolder}"]
+}

@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path, include
 from . import views
 
+app_name = "lista_tarefas"
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('teste/', views.teste_view),
     path('', views.index_view),
-    path('tarefas/', include("tarefas.urls")) # agrupando as tarefas
+    path('tarefas/', include("tarefas.urls"), name='tarefas') # agrupando as tarefas
 ]

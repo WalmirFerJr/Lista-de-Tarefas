@@ -21,6 +21,7 @@
                     <td>{{tarefa.descricao}}</td>
                     <td>{{tarefa.completo}}</td>
                     <td>{{tarefa.data_criacao}}</td>
+                    <td><a href="{% url 'tarefas:remover' tarefa.id %}">Remover</a></td>
                 </tr>
             {% endfor %}
         </tbody>

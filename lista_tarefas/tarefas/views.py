@@ -26,4 +26,4 @@ def tarefas_adicionar(request:HttpRequest):
 def tarefas_remover(request:HttpRequest, id):
     tarefa = get_object_or_404(TarefaModel, id=id)
     tarefa.delete()
-    return redirect('tarefas:home ')
+    return redirect('tarefas:home')
